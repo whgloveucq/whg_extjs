@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link href="../ext-4.2.1/resources/css/ext-all.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../ext-4.2.1/bootstrap.js"></script>
+
+<script type="text/javascript" src="../ext-4.2.1/locale/ext-lang-zh_CN.js"></script>
+<script>
+function exGet()
+{
+	var el=Ext.get('myDiv');
+	alert(Ext.encode(el)+"-dom:" + el.dom);
+
+	}
+</script>
+</head>
+<body>
+<div id="myDiv">
+<p>p 标签1</p>
+</div>
+<p>p 标签2</p>
+<button onclick="exGet()">ext</button>
+
+</body>
+</html>
+
+

@@ -1,0 +1,90 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>DOM 基础 </title>
+<link rel="stylesheet" type="text/css" href="ext-4.2.1/resources/css/ext-all.css"> 
+<script type="text/javascript" src="ext-4.2.1/bootstrap.js" ></script>  
+<script type="text/javascript" src="ext-4.2.1/locale/ext-lang-zh_CN.js"></script>  
+<link href="/html/CSS/dombasic.css" rel="stylesheet" type="text/css"/>
+<script >
+
+function findDiv()
+{
+var div=document.getElementById('myDiv');
+alert(div);
+  
+}
+function findP()
+{ var arr=document.getElementsByTagName('p');
+alert(arr[0].innerHTML);
+	}
+function findBydiv()
+{
+	var arr=document.getElementById('myDiv');
+	alert(arr.childNodes[0]);
+
+	}
+function createDiv(){ var div=document.createElement('div');
+  div.id='newDiv';
+ 
+ // document.body.appendChild(div);
+  document.body.insertBefore(div,document.getElementById('myDiv'));
+
+	}
+function removeP(){
+   var p=document.getElementsByTagName('p')[0];
+    p.parentNode.removeChild(p);
+   
+
+
+	
+	}
+function changeId()
+{
+	 var div=document.getElementById('myDiv');
+	 div.id='testNewId';
+
+	}
+function getHTML()
+{
+var div=document.getElementById('myDiv');
+alert(div.innerHTML);
+
+	}
+function changeHTML()
+{var div=document.getElementById('myDiv');
+div.innerHTML='<div>嵌入新的DIV</div>';
+	}
+
+function setStyle()
+{ var div=document.getElementById('myDiv');
+  div.style.background='#ffff00';
+  div.style.width=300+'px';
+  div.style.height=50+'px';
+	}
+function useCSS()
+{ var div=document.getElementById('myDiv');
+div.className='myDiv';
+
+
+	}
+
+</script>
+</head>
+<body>
+<div id="myDiv">
+<p>p 标签1</p>
+</div>
+<p>p 标签2</p>
+<button onclick="findDiv()">访问DIV标签</button>
+<button onclick="findP()">访问第一个P标签</button>
+<button onclick="createDiv()">创建DIV标签</button>
+<button onclick="removeP()">删除第一个P标签</button>
+<button onclick="changeId()">修改标签ID</button>
+<button onclick="getHTML()">获取HTML</button>
+<button onclick="changeHTML()">改变HTML</button>
+<button onclick="useCSS()">应用CSS</button>
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>DOM 基础 </title>
+<link rel="stylesheet" type="text/css" href="ext-4.2.1/resources/css/ext-all.css"> 
+<script type="text/javascript" src="ext-4.2.1/bootstrap.js" ></script>  
+<script type="text/javascript" src="ext-4.2.1/locale/ext-lang-zh_CN.js"></script>  
+<script >
+
+function findDiv()
+{
+var div=document.getElementById('myDiv');
+alert(div);
+  
+}
+function findP()
+{ var arr=document.getElementsByTagName('p');
+alert(arr[0].innerHTML);
+	}
+function findBydiv()
+{
+	var arr=document.getElementById('myDiv');
+	alert(arr.childNodes[0]);
+
+	}
+
+</script>
+</head>
+<body>
+<div id="myDiv">
+<p>p 标签1</p>
+</div>
+<p>p 标签2</p>
+<button onclick="findDiv()">访问DIV标签</button>
+<button onclick="findP()">访问第一个P标签</button>
+<button onclick="findBydiv()">访问子标签</button>
+</body>
+</html>
+

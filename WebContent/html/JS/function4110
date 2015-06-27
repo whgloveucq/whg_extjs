@@ -1,0 +1,10 @@
+Animal=function(name,age){ 
+  this.name=name;
+  this.age=age;
+  Animal.instanceCounter++;
+}
+Animal.instanceCounter=0;
+var animal1=new Animal("´óÄ®ÇîÇï1","27");
+alert(Animal.instanceCounter+"---"+animal1.instaceCounter);
+var animal2=new Animal("´óÄ®ÇîÇï2","27");
+alert(Animal.instanceCounter+"---"+animal2.instanceCounter);

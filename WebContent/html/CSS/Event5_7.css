@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+div * {
+	display:block;
+	margin:4px;
+	padding:4px;
+	border:1px solid white;
+}
+.redBorder{
+	border:1px solid red;
+}
+.noBorder{
+	border:1px solid white;
+}
+li {
+	width:200px;
+	
+	
+}
