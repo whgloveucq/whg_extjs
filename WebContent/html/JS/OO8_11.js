@@ -21,6 +21,12 @@ fight:function(){
 
 }
 Animal.prototype.constructor=Animal;
+
+Person=function(config){
+      Person.superclass.constructor.call(this,config);
+}
+
+
 Person=Ext.extend(Animal,{
 tail:null,
 happy:function(){
@@ -36,9 +42,9 @@ fight:Ext.emptyFn
 })
 //Person.prototype.constructor=Person
 var p=new Person({name:"大漠穷秋"}) ;
-alert(p.name);
-alert(p.tail);
-alert(p.eyes);
+alert("name>"+p.name);
+alert("tail>"+p.tail);
+alert("eyes>"+p.eyes);
 p.happy();
 p.eat();
 p.run();
