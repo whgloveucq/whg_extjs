@@ -2,7 +2,7 @@ Ext.onReady(
 function(){
 
 Animal=function(tail){
-this.tail=tail||"动物的尾巴";
+this.tail=tail||"鍔ㄧ墿鐨勫熬宸�;
 Animal.instanceCounter++;
 }
 
@@ -10,16 +10,16 @@ Animal.instanceCounter=0;
 Animal.prototype={
 
 happy:function(){
-alert("摇动>"+this.tail);
+alert("鎽囧姩>"+this.tail);
 },
 eat:function(){
-alert("动物吃生的");
+alert("鍔ㄧ墿鍚冪敓鐨�);
 },
 run:function(){
-alert("动物四条腿跑");
+alert("鍔ㄧ墿鍥涙潯鑵胯窇");
 },
 fight:function(){
-alert("动物往死里打");
+alert("鍔ㄧ墿寰�閲屾墦");
 }
 }
 
@@ -27,10 +27,10 @@ Animal.prototype.constructor=Animal;
 Person=function(name)
 {
   Person.superclass.call(this);
-  delete this.tail; //对象冒充，并删除不需要的属性
+  delete this.tail; //瀵硅薄鍐掑厖锛屽苟鍒犻櫎涓嶉渶瑕佺殑灞炴�
   this.name=name;
   for(var p in Animal){
-  Person[p]=Animal[p]; //拷贝父类的静态属性
+  Person[p]=Animal[p]; //鎷疯礉鐖剁被鐨勯潤鎬佸睘鎬�
   	
   }		
 }
@@ -41,34 +41,34 @@ F.prototype=Animal.prototype;
 delete F.prototype.fight;
 //F.prototype.eat=function(){
 
-//alert("人类吃熟食的");
+//alert("浜虹被鍚冪啛椋熺殑");
 
 //}
 Ext.apply(F.prototype,
 {
 eat:function(){
-alert("人类吃熟食的");
+alert("浜虹被鍚冪啛椋熺殑");
 },
 run:function(){
-alert("人类是两条腿跑的");
+alert("浜虹被鏄袱鏉¤吙璺戠殑");
 }
 
 }
 
 
 )
-Person.prototype=new F(); //原型继承,并删除不需要的方法。
+Person.prototype=new F(); //鍘熷瀷缁ф壙,骞跺垹闄や笉闇�鐨勬柟娉曘�
 Person.prototype.constructor=Person;
 
 
-var p1=new Person("大漠穷秋");
-var p2=new Person("小秋");
+var p1=new Person("澶ф紶绌风");
+var p2=new Person("灏忕");
 alert(Person.instanceCounter);
 alert(p1.tail);
 alert(p1.name);
 p1.eat();
 p1.run();
 p1.fight();
-
+p1.happy();
 }
 )
