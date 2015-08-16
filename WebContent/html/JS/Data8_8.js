@@ -68,7 +68,6 @@ alert(p1.tail);
 alert(p1.name);
 p1.eat();
 p1.run();
-p1.fight();
-p1.happy();
+
 }
 )
