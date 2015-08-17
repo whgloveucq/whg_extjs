@@ -26,7 +26,7 @@ var btn= new Ext.Button(
 { text:'停止',
   handler:function(){
   pbar.reset();
-  pbar.updateText("强制结束");
+  pbar.updateText("强制结束2");
   
   },
   renderTo:Ext.getBody()
