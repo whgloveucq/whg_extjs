@@ -19,7 +19,7 @@ run:function(){
 	pbar.updateProgress(i,"加载进度："+Math.round(i*100)+"%");
 	if(Math.round(i*100)==100)
 	{ 
-		pbar.updateText("加载完成");
+		pbar.updateText("加载完成2");
 		Ext.TaskMgr.stop(task);
 	
 	}
