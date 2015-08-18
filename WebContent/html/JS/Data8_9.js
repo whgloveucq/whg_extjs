@@ -67,6 +67,7 @@ alert(Person.instanceCounter);
 alert(p1.tail);
 alert(p1.name);
 p1.eat();
+p1.run();
 
 }
 )
