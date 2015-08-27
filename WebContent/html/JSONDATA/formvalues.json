@@ -1,0 +1,8 @@
+{
+	success : true,
+	data : {
+		userName : '漠漠',
+		gender : 'male',
+		isMarryed : true
+	}
+}
