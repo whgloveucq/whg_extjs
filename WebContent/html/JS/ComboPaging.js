@@ -1,10 +1,10 @@
 Ext.onReady(function() {
     var fp = new Ext.form.FormPanel({
     	bodyStyle:{
-    		'padding':'80 100'
+    		'padding':'80 70'
     	},
     	defaults:{
-    		width:120
+    		width:150
     	},
     	labelWidth:50,
     	items:[
@@ -19,9 +19,12 @@ Ext.onReady(function() {
 	    		valueField:'value',
 	    		triggerAction:'all',
 	    		allowBlank:false,
+	    		pageSize:3,
+	    		listWidth:250,
 	    		emptyText:'请选择',
 	    		store: new Ext.data.JsonStore({
-	    			url:'../html/JSONDATA/ComboRemote.json',
+	    			url:'../html/JSONDATA/ComboPaging.json',
+	    			totalProperty:'total', 
 	    			root:'rows',
 			        fields: ['name','value']
 			    })

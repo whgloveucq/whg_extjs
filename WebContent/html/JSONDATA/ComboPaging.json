@@ -1,0 +1,14 @@
+{
+	success : true,
+	total:20,
+	rows : [{
+		name : '男',
+		value : '0'
+	}, {
+		name : '女',
+		value : '1'
+	}, {
+		name : '其他',
+		value : '2'
+	}]
+}
