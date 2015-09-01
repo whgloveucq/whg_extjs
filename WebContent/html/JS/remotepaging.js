@@ -1,7 +1,7 @@
 Ext.onReady(function() {
 	//定义store
 	var store=new Ext.data.JsonStore({
-		url:'remotepaging.jsp',
+		url:'../pages/remotepaging.jsp',
 		root:'rows',
 		totalProperty:'totalCount',
 		baseParams:{limit:10},
