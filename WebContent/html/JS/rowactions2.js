@@ -185,7 +185,8 @@ Ext.onReady(function(){
 	var win=new Ext.Window({
 		title:'复杂Grid2',
 		width:850,
-		height:450,
+		height:450 ,
+		draggable=true,
 		buttonAlign:'right',
 		layout:'fit',
 		items:gridPanel

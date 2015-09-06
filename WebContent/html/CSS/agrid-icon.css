@@ -1,0 +1,47 @@
+.terminal {
+	background-image: url(../../icons/terminal.png) !important;
+}
+
+.cd-delete {
+	background-image: url(../../icons/cd_delete.png) !important;
+}
+
+.open {
+	background-image: url(../../icons/add.gif) !important;
+}
+
+.add {
+	background-image: url(../../icons/add.gif) !important;
+}
+
+.delete {
+	background-image: url(../../icons/delete.gif) !important;
+}
+
+.option {
+	background-image: url(../../icons/plugin.gif) !important;
+}
+
+.remove {
+	background-image: url(../../icons/delete.gif) !important;
+}
+
+.save {
+	background-image: url(../../icons/save.gif) !important;
+}
+
+.up {
+	background-image: url(../../icons/up.gif) !important;
+}
+
+.down {
+	background-image: url(../../icons/down.gif) !important;
+}
+
+.top {
+	background-image: url(../../icons/top.gif) !important;
+}
+
+.bottom {
+	background-image: url(../../icons/bottom.gif) !important;
+}
