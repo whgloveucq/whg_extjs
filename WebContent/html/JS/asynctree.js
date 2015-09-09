@@ -29,7 +29,7 @@ Ext.onReady(function(){
 		title: '左侧树',
 		region: 'west',
 		loader: new Ext.tree.TreeLoader({
-			dataUrl:'asynctree.jsp',
+			dataUrl:'../../pages/asynctree.jsp',
 			listeners:{
 				'beforeload':function(treeLoader, node) {
 			        this.baseParams.text=node.attributes.text;
