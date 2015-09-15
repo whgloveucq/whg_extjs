@@ -27,8 +27,8 @@ public class TreeGenerator {
 			StringBuffer sql=new StringBuffer();
 			sql.append(" SELECT T.DEPT_ID,T.DEPT_NAME,T.P_ID,LEVEL");
 			sql.append(" FROM TD_CDB_DEPARTMENT T ");
-			sql.append(" START WITH P_ID = "+startId);
-			sql.append(" CONNECT BY PRIOR  DEPT_ID=P_ID");
+			sql.append(" WHERE P_ID = "+startId);
+			//sql.append(" CONNECT BY PRIOR  DEPT_ID=P_ID");
 			sql.append(" ORDER BY P_ID ASC");
 			qr.query(conn,sql.toString(),new ResultSetHandler<Object>(){
 				public Object handle(ResultSet rs) throws SQLException {

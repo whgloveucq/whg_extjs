@@ -14,10 +14,16 @@ public class DBConnPool {
 	private static ArrayList<Connection> freeConnections=new ArrayList<Connection>();
 	public static int maxConn=30;
 	public static int inUse=0;
-	public static String url="jdbc:oracle:thin:@127.0.0.1:1521:sys2";
+	/*public static String url="jdbc:oracle:thin:@127.0.0.1:1521:sys2";
 	public static String driverName="oracle.jdbc.driver.OracleDriver";
 	public static String userName="cmp";
 	public static String password="cmp";
+	*/
+	
+	public static String url="jdbc:mysql://localhost:3306/test";
+	public static String driverName="com.mysql.jdbc.Driver";
+	public static String userName="root";
+	public static String password="root";
 	
 	private DBConnPool() {
 	}
