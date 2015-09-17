@@ -1,0 +1,44 @@
+[
+	{
+		'bookName':'脚本类',
+		uiProvider:'col',
+		children:[
+			{
+				'bookName':'《Ext江湖》',
+				'author':'大漠穷秋',
+				'publisher':'电子工业出版社',
+				uiProvider:'col',
+				leaf:true
+			},
+			{
+				'bookName':'《Sencha Touch源码分析》',
+				'author':'大漠穷秋',
+				'publisher':'(未出版)',
+				uiProvider:'col',
+				leaf:true
+			}
+		]
+		
+	},
+	{
+		'bookName':'Java类',
+		uiProvider:'col',
+		children:[
+			{
+				'bookName':'《Java虚拟机的未来》',
+				'author':'大漠穷秋',
+				'publisher':'(未出版)',
+				uiProvider:'col',
+				leaf:true
+			},
+			{
+				'bookName':'《虚拟世界》',
+				'author':'大漠穷秋',
+				'publisher':'(未出版)',
+				uiProvider:'col',
+				leaf:true
+			}
+		]
+		
+	}
+]
